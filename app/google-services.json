@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "250680154345",
+    "firebase_url": "https://stockwallpaperapp.firebaseio.com",
+    "project_id": "stockwallpaperapp",
+    "storage_bucket": "stockwallpaperapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250680154345:android:41fde254277c8833",
+        "android_client_info": {
+          "package_name": "com.example.ritwik.wallify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250680154345-36lii59nomdk9cemd8gi3f8f5tfmtmcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ritwik.wallify",
+            "certificate_hash": "fabaee7cca6483b84562374311b30ff86002feac"
+          }
+        },
+        {
+          "client_id": "250680154345-ksb514usgku4e07u5g0ek76u75h5ohnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOHxYmVGfuN76Kl6GAvM9WJb7Clfxjai8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250680154345-ksb514usgku4e07u5g0ek76u75h5ohnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
