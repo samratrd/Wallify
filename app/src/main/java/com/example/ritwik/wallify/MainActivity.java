@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
 
 //Fragment Operation .........................................................................
 
-        toolbar.setTitle("Category");
+        getSupportActionBar().setTitle("Category");
         tabLayout = findViewById(R.id.tablayout_id);
         viewPager = findViewById(R.id.viewpager_id);
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
