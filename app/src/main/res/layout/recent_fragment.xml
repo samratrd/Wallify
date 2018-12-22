@@ -15,7 +15,8 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recent_recyclerview">
+        android:id="@+id/recent_recyclerview"
+        android:padding="1dp">
 
 
     </android.support.v7.widget.RecyclerView>

@@ -1,6 +1,7 @@
 package Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,6 +11,8 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.ritwik.wallify.R;
+import com.example.ritwik.wallify.SectionDetail;
+import com.example.ritwik.wallify.SetWallpaperActivity;
 
 import java.util.List;
 
@@ -30,7 +33,8 @@ public class GeneralViewAdapter extends RecyclerView.Adapter<GeneralViewAdapter.
     @NonNull
     @Override
     public GeneralViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.general_row_view_image_model,parent,false );
+        View view = LayoutInflater.from(context)
+                .inflate(R.layout.general_row_view_image_model,parent,false );
         return new GeneralViewHolder(view);
     }
 
@@ -47,13 +51,26 @@ public class GeneralViewAdapter extends RecyclerView.Adapter<GeneralViewAdapter.
         return generalViewModels.size();
     }
 
-    public class GeneralViewHolder extends RecyclerView.ViewHolder {
+    public class GeneralViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ImageView imageView;
         public GeneralViewHolder(View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.general_image_view);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            int position = getAdapterPosition();
+            GeneralViewModel gvm = generalViewModels.get(position);
+            Intent intent = new Intent(context, SetWallpaperActivity.class);
+            intent.putExtra("url", gvm.getThumburl());
+
+            context.startActivity(intent);
+
+
         }
     }
 }

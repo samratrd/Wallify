@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.ritwik.wallify.R;
 import com.example.ritwik.wallify.SectionDetail;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -42,7 +43,14 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         Category category = categories.get(position);
         holder.textView.setText(category.title);
-        Glide.with(context).load(category.thumburl).into(holder.imageView);
+        Glide.with(context)
+                .load(category.thumburl)
+                .into(holder.imageView);
+        //Picasso.get()
+                //.load(category.thumburl)
+               // .centerCrop()
+                //.into(holder.imageView);
+
 
     }
 

@@ -13,8 +13,10 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
+        android:padding="1dp"
         android:layout_height="match_parent"
-        android:id="@+id/popular_recyclerview">
+        android:id="@+id/popular_recyclerview"
+        >
 
 
     </android.support.v7.widget.RecyclerView>
