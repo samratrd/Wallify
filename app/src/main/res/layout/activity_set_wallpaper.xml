@@ -25,26 +25,66 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:scaleType="centerCrop"
-        tools:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:scaleType="centerCrop"
+        android:src="@color/colorbackground"
+        />
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/floating_action_menu"
+        app:menu_colorNormal="@color/colorPrimaryDark"
+        app:menu_colorPressed="@color/colorPrimaryDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_margin="16dp"
-        android:layout_alignParentRight="true"
+        app:menu_backgroundColor="@android:color/transparent"
         app:menu_labels_showShadow="true"
         app:menu_openDirection="up"
-        app:menu_backgroundColor="@android:color/transparent">
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:fab_label="Set as"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            android:id="@+id/set_as"
+            android:src="@drawable/ic_setas"
+            />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Download"
+            app:fab_size="mini"
+            android:padding="5dp"
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            android:id="@+id/download"
+            android:src="@drawable/ic_download"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:fab_label="Share"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            android:id="@+id/share"
+            android:src="@drawable/share_icon"
+            />
 
     </com.github.clans.fab.FloatingActionMenu>
 

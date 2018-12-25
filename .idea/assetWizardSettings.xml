@@ -30,8 +30,8 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_cancel" />
-                            <entry key="sourceFile" value="C:\Users\Ritwik\Downloads\cancel.svg" />
+                            <entry key="outputName" value="ic_download" />
+                            <entry key="sourceFile" value="C:\Users\Ritwik\Downloads\download.svg" />
                           </map>
                         </option>
                       </PersistentState>
